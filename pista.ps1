@@ -37,6 +37,7 @@ Start-Sleep -Seconds 1
 [System.Windows.Forms.SendKeys]::SendWait("{LEFT}")
 Start-Sleep -Milliseconds 300
 [System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
+Start-Sleep -Milliseconds 300
 
 # --- Hide all mstsc.exe windows ---
 if (-not ([System.Management.Automation.PSTypeName]'Win32Enum').Type) {
